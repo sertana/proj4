@@ -16,7 +16,7 @@ class PlayersController < ApplicationController
     @player = Player.new(player_params)
     
     if @player.save
-      redirect_to @player
+      redirect_to players_url
     else
       render :action => :new
     end

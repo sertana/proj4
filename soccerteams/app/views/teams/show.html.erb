@@ -1,11 +1,6 @@
 <div>
-  <h3>Players in team:</h3> 
-    <%= @team.players do |player| %>
-    <ul>
-      <%= @team.players.name %>
-    </ul>
-    <% end %>
+  <h3>Team Name: <%= @team.name %>
   </h3>
-
+ 
   <%= link_to 'Edit Team', edit_team_path %>
 </div>
