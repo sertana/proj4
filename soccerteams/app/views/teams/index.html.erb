@@ -1,0 +1,10 @@
+<div>
+  <h1>All teams</h1>
+  <% @teams.each do |team| %>
+  <ul>
+    <%= link_to team.name, team_path(team) %></br>
+    <%= link_to 'Delete Team', team, :method => 'delete' %> </br>
+  </ul>
+  <% end %>
+  <%= link_to 'New Team',new_team_path %>
+</div>
